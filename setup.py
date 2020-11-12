@@ -13,7 +13,7 @@ with open("README.md", mode="r", encoding = "utf8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
-    name="tasksim",
+    name="hierarchical",
     version="0.0.1",
     author="Hayden Helm",
     long_description=LONG_DESCRIPTION,
