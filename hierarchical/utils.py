@@ -1,3 +1,17 @@
+import numpy as np
+
+from tasksim import task_similarity
+
+from graspy.embed import AdjacencySpectralEmbed as ASE
+from graspy.cluster import AutoGMMCluster as GMM
+
+from proglearn import LifelongClassificationForest as l2f
+
+from graspy.embed import ClassicalMDS as CMDS
+
+from sklearn.metrics import normalized_mutual_info_score as NMI
+from sklearn.metrics import pairwise_distances
+
 def generate_hierarchical_gaussian_data(dist_means=None, n_clusts=2, n_dists_per_clust=2, d=2, clust_cov=1, n_per_dist=25, dist_cov=0.5, acorn=None):
     if n_clusts > 0:
         all_means = [
