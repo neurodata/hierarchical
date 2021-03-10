@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+        requirements = f.read().splitlines()
+
 requirements = [
     "graspy",
     "proglearn",
@@ -7,6 +10,7 @@ requirements = [
     "numpy",
     "matplotlib",
     "seaborn",
+    'tasksim @ git+git://github.com/neurodata/task-similarity.git#egg=tasksim'
 ]
 
 with open("README.md", mode="r", encoding = "utf8") as f:
