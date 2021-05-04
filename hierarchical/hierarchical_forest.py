@@ -39,7 +39,6 @@ class HierarchicalForest:
     def _fit_fine(self, X, y, y_coarse):
         for coarse_label in self.coarse_labels:
             temp_indices = np.where(y_coarse == coarse_label)[0]
-            print(np.unique(y[temp_indices]))
             self.fine_forests[coarse_label] = UF(n_estimators=self.n_estimators_fine, max_depth=self.max_depth
                                                 ).fit(X[temp_indices], y[temp_indices])
             
