@@ -173,6 +173,7 @@ def generate_dist_matrix(X, y, metric='tasksim', metric_kwargs={'n_neg_classes':
         n_iterations_per_pair_of_classes = int(len(function_tuples) / ((len(classes)**2 - len(classes)) / 2))
     
     distances = np.array(Parallel(n_jobs=n_cores)(delayed(condensed_func)(tuple_) for tuple_ in function_tuples))
+
     dist_matrix = _array_to_matrix(distances, len(classes), n_iterations_per_pair_of_classes, directed)
     
     return dist_matrix
