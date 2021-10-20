@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hierarchical
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/neurodata/hierarchical/
+Author: Hayden Helm
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+
+# hierarchical
+a repo for exploring how to induce a hierachy for classification
+
+

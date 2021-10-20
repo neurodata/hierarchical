@@ -1,0 +1,7 @@
+graspy
+proglearn
+sklearn
+numpy
+matplotlib
+seaborn
+tasksim@ git+git://github.com/neurodata/task-similarity.git#egg=tasksim

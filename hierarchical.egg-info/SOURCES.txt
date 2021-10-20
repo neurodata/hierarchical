@@ -1,0 +1,7 @@
+README.md
+setup.py
+hierarchical.egg-info/PKG-INFO
+hierarchical.egg-info/SOURCES.txt
+hierarchical.egg-info/dependency_links.txt
+hierarchical.egg-info/requires.txt
+hierarchical.egg-info/top_level.txt
