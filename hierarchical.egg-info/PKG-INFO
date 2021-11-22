@@ -5,12 +5,10 @@ Summary: UNKNOWN
 Home-page: https://github.com/neurodata/hierarchical/
 Author: Hayden Helm
 License: UNKNOWN
+Description: # hierarchical
+        a repo for exploring how to induce a hierachy for classification
+        
 Platform: UNKNOWN
 Classifier: Intended Audience :: Science/Research
 Classifier: Topic :: Scientific/Engineering :: Mathematics
 Description-Content-Type: text/markdown
-
-# hierarchical
-a repo for exploring how to induce a hierachy for classification
-
-
