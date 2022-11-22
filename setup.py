@@ -4,13 +4,13 @@ with open('requirements.txt') as f:
         requirements = f.read().splitlines()
 
 requirements = [
-    "graspy",
-    "proglearn",
+    "graspologic",
+    # "proglearn",
     "sklearn",
     "numpy",
     "matplotlib",
     "seaborn",
-    'tasksim @ git+git://github.com/neurodata/task-similarity.git#egg=tasksim'
+    # 'tasksim @ git+git://github.com/neurodata/task-similarity.git#egg=tasksim'
 ]
 
 with open("README.md", mode="r", encoding = "utf8") as f:

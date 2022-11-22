@@ -1,11 +1,11 @@
 import numpy as np
 
-from tasksim import task_similarity
+# from tasksim import task_similarity
 
 from graspologic.embed import AdjacencySpectralEmbed as ASE
 from graspologic.cluster import AutoGMMCluster as GMM
 
-from proglearn import LifelongClassificationForest as l2f
+# from proglearn import LifelongClassificationForest as l2f
 
 from graspologic.embed import ClassicalMDS as CMDS
 

@@ -1,5 +1,4 @@
 import numpy as np
-from proglearn import UncertaintyForest as UncertaintyForestPL
 from sklearn.ensemble import RandomForestClassifier
 
 class HierarchicalForest:
@@ -61,6 +60,8 @@ class HierarchicalForest:
         self._fit_fine(X, y, y_coarse)
         
         self.fitted=True
+
+        return self
         
         
     def _fit_coarse(self, X, y_coarse):
@@ -107,11 +108,3 @@ class HierarchicalForest:
 
     def predict(self, X):
         return np.argmax(self.predict_proba(X), axis=1)
-
-
-class UncertaintyForest(UncertaintyForestPL):
-    def __init__(self, n_estimators=100, max_depth=10, tree_construction_proportion=0.67):
-        super().__init__(n_estimators=n_estimators, max_depth=max_depth, tree_construction_proportion=tree_construction_proportion)
-
-    def predict_proba(self, X):
-        return super().predict_proba(X, 0)
